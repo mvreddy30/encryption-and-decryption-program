@@ -10,7 +10,7 @@ int main()
            string z="abcdefghijklmnopqrstuvwxyz";
            string a="";
            string b="abcdefghijklmnopqrstuvwxyz";
-           int k;
+           int key;
            int n=k/26;
            cout<<"please enter a user key for the encryption"<<endl;
            cin>>k;
@@ -22,7 +22,7 @@ int main()
                               {
                                     if(x[i]==z[j])
                                      {
-                                        y=y+z[((j+k)%26)];
+                                        y=y+z[((j+key)%26)];
                                         
                                           
                                      }
@@ -39,7 +39,7 @@ int main()
                  for(int j=0;j<b.length();j++)  {
                      
                      if(y[i]==b[j]){
-                         a=a+b[((j-k+n*26)%26)];
+                         a=a+b[((j-key+n*26)%26)];
                          }
                      
                      }
